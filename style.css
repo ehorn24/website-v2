@@ -288,7 +288,7 @@ nav a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
+  width: 95%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -317,6 +317,48 @@ nav a {
 .project-thumbnail {
   border: 2px solid white;
   height: 450px;
-  width: 300px;
+  width: 250px;
   margin: 10px;
+}
+
+.thumbnail-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 450px;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.project-thumbnail h4 {
+  position: absolute;
+  bottom: -50px;
+  margin-left: 10px;
+  z-index: 9999;
+  color: white;
+  opacity: 1;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  width: 220px;
+}
+.cookbook {
+  background-image: url("https://user-images.githubusercontent.com/52179940/88744305-f3ea6f80-d114-11ea-88a1-4e704b83fa32.png");
+  background-size: cover;
+  background-position: -20px;
+}
+
+.ijournal {
+  background-image: url("https://i.imgur.com/DU8om7A.png");
+  background-size: cover;
+  background-position: -200px;
+}
+
+.drinkgenius {
+  background-image: url("https://i.imgur.com/Ffs9xBk.png");
+  background-size: cover;
 }
