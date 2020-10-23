@@ -56,7 +56,19 @@ main {
   bottom: 15px;
 }
 
-.down-arrow {
+.arrow-3 {
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+  margin-left: 20px;
+}
+
+.arrow-3:hover {
+  bottom: 65px;
+}
+
+.down-arrow,
+.up-arrow {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -65,13 +77,27 @@ main {
   cursor: pointer;
 }
 
-.down-arrow-image {
+.down-arrow-image,
+.up-arrow-image {
   width: 50px;
   height: 50px;
 }
 
+.up-arrow-image {
+  transform: rotate(180deg);
+  position: relative;
+  bottom: 70px;
+  margin-left: 20px;
+}
+
+.up-arrow-image:hover {
+  bottom: 75px;
+}
+
 .section-title {
   font-family: "Bungee Hairline", cursive;
+  color: white;
+  font-size: 40px;
 }
 
 /*Navigation*/
@@ -180,7 +206,6 @@ nav a {
 }
 
 .about-div {
-  background-color: transparent;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -195,17 +220,14 @@ nav a {
   margin: 30px;
   padding: 5px;
   position: relative;
-  z-index: -1;
 }
 
 .inner-about-div h2 {
-  font-size: 40px;
   position: absolute;
-  top: -80px;
+  top: -70px;
   left: 15px;
   background-color: transparent;
   font-family: "Bebas Neue", cursive;
-  color: white;
   width: 250px;
 }
 
@@ -241,7 +263,8 @@ nav a {
 
 .resume-div,
 .linkedin-div,
-.github-div {
+.github-div,
+.email-div {
   display: flex;
   cursor: pointer;
   padding: 0 20px;
@@ -249,7 +272,8 @@ nav a {
 
 .resume-div a,
 .linkedin-div a,
-.github-div a {
+.github-div a,
+.email-div a {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -262,13 +286,15 @@ nav a {
 
 .resume-div a:hover,
 .linkedin-div a:hover,
-.github-div a:hover {
+.github-div a:hover,
+.email-div a:hover {
   border-bottom: 2px solid #732ebb;
 }
 
 .resume-div a:visited,
 .linkedin-div a:visited,
-.github-div a:visited {
+.github-div a:visited,
+.email-div a:visited {
   color: white;
 }
 
@@ -278,9 +304,9 @@ nav a {
 
 /* Projects */
 #projects {
-  min-height: 650px;
+  min-height: 350px;
   position: relative;
-  padding-top: 80px;
+  padding-top: 350px;
 }
 .projects-div {
   background-color: transparent;
@@ -294,7 +320,6 @@ nav a {
 }
 
 .inner-projects-div {
-  border: 2px solid #732ebb;
   margin: 30px;
   padding: 5px;
   position: relative;
@@ -314,51 +339,73 @@ nav a {
   width: 280px;
 }
 
-.project-thumbnail {
-  border: 2px solid white;
-  height: 450px;
-  width: 250px;
-  margin: 10px;
-}
-
-.thumbnail-overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 450px;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-.project-thumbnail h4 {
+.inner-projects-div ul h4 {
   position: absolute;
-  bottom: -50px;
-  margin-left: 10px;
-  z-index: 9999;
-  color: white;
-  opacity: 1;
-  font-size: 60px;
   font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  color: white;
+  bottom: -120px;
+  left: 20px;
   letter-spacing: 2px;
-  width: 220px;
-}
-.cookbook {
-  background-image: url("https://user-images.githubusercontent.com/52179940/88744305-f3ea6f80-d114-11ea-88a1-4e704b83fa32.png");
-  background-size: cover;
-  background-position: -20px;
 }
 
-.ijournal {
-  background-image: url("https://i.imgur.com/DU8om7A.png");
-  background-size: cover;
-  background-position: -200px;
+/* Contact */
+#contact {
+  min-height: 500px;
+  padding-top: 300px;
 }
 
-.drinkgenius {
-  background-image: url("https://i.imgur.com/Ffs9xBk.png");
-  background-size: cover;
+.contact-div {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.inner-contact-div {
+  border: 2px solid #732ebb;
+  margin: 30px;
+  padding: 50px;
+  position: relative;
+}
+
+.inner-contact-div h2 {
+  position: absolute;
+  top: -70px;
+  left: 15px;
+}
+
+.inner-contact-div .icons-div {
+  margin-top: 50px;
+}
+
+.email-div a {
+  margin-left: 10px;
+}
+
+.contact-info {
+  margin: 30px;
+}
+
+.contact-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  color: white;
+  text-align: center;
+}
+
+.up-arrow {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+.scroll-to-top {
+  position: relative;
+  bottom: 85px;
 }
