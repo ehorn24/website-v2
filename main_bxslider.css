@@ -184,3 +184,16 @@ ul.bxslider {
   font-size: 0.85em;
   padding: 10px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .bx-wrapper img {
+    width: 100%;
+  }
+  .bx-wrapper {
+    max-height: 400px;
+  }
+  .bxslider li {
+    max-height: 100%;
+    overflow: hidden;
+  }
+}
