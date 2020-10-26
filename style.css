@@ -709,10 +709,10 @@ main {
     bottom: 15px;
   }
   .arrow-3 {
-    bottom: 50px;
+    bottom: 120px;
   }
   .arrow-3:hover {
-    bottom: 45px;
+    bottom: 115px;
   }
   .up-arrow-image {
     bottom: 70px;
@@ -782,6 +782,7 @@ main {
 
   /* Projects */
   #projects {
+    padding-top: 150px;
     margin-top: 180px;
     min-height: 600px;
   }
